@@ -1,3 +1,7 @@
+include ':data-model'
+include ':core-bridge'
+include ':data-cloud'
+include ':data-db'
 include ':data'
 include ':domain'
 include ':app'

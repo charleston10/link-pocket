@@ -2,8 +2,8 @@ package com.linkpocket
 
 import android.app.Application
 import com.data.di.DataStoreModule
-import com.data.di.DatabaseModule
-import com.data.di.NetworkModule
+import com.data.data_db.DatabaseModule
+import com.data.data_cloud.NetworkModule
 import com.data.di.RepositoryModule
 import com.domain.di.DomainModule
 import com.linkpocket.di.PresentationModule
