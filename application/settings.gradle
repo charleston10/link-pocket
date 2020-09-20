@@ -1,5 +1,5 @@
 include ':data-model'
-include ':core-bridge'
+include ':core'
 include ':remote'
 include ':cache'
 include ':data'

@@ -1,4 +1,4 @@
-package com.core_bridge
+package com.core
 
 import com.data.data_model.PreviewData
 import io.reactivex.Observable

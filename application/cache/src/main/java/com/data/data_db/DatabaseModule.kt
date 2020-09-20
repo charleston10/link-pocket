@@ -1,7 +1,7 @@
 package com.data.data_db
 
-import com.core_bridge.IPreviewDataSource
-import com.core_bridge.Named
+import com.core.IPreviewDataSource
+import com.core.Named
 import com.data.data_db.dao.IPreviewDao
 import com.data.data_db.dao.PreviewDao
 import com.data.data_db.datasource.PreviewDataSource

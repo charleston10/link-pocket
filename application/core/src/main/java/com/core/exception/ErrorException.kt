@@ -1,4 +1,4 @@
-package com.core_bridge.exception
+package com.core.exception
 
 sealed class ErrorException : Throwable() {
     object BadException : ErrorException()

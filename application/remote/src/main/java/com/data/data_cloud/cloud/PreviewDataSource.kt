@@ -1,7 +1,7 @@
 package com.data.data_cloud.cloud
 
-import com.core_bridge.IPreviewDataSource
-import com.core_bridge.exception.ErrorException
+import com.core.IPreviewDataSource
+import com.core.exception.ErrorException
 import com.data.data_cloud.api.GitHubApi
 import com.data.data_cloud.mapper.ResponseMapper
 import com.data.data_model.PreviewData

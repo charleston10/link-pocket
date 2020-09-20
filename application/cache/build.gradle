@@ -61,6 +61,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     testImplementation 'junit:junit:4.13'
 
-    implementation project(':core-bridge')
+    implementation project(':core')
     implementation project(':data-model')
 }

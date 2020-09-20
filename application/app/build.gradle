@@ -39,6 +39,7 @@ dependencies {
 
     // Domain
     implementation project(':domain')
+
     // Data
     implementation project(':data')
     implementation project(':remote')

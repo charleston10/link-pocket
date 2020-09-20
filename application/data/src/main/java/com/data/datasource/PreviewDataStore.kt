@@ -1,8 +1,8 @@
 package com.data.datasource
 
-import com.core_bridge.IPreviewDataSource
-import com.core_bridge.IPreviewDataStore
-import com.core_bridge.exception.ErrorException
+import com.core.IPreviewDataSource
+import com.core.IPreviewDataStore
+import com.core.exception.ErrorException
 import com.data.data_model.PreviewData
 import io.reactivex.Observable
 

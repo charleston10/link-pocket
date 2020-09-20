@@ -1,4 +1,4 @@
-package com.core_bridge
+package com.core
 
 object Named {
     object DataSource {

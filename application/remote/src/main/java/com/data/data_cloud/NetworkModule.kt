@@ -1,7 +1,7 @@
 package com.data.data_cloud
 
-import com.core_bridge.IPreviewDataSource
-import com.core_bridge.Named
+import com.core.IPreviewDataSource
+import com.core.Named
 import com.data.data_cloud.api.GitHubApi
 import com.data.data_cloud.cloud.PreviewDataSource
 import com.data.data_cloud.network.HTTPClient

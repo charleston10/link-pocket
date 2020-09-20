@@ -1,6 +1,6 @@
 package com.data.data_cloud.mapper
 
-import com.core_bridge.IMapper
+import com.core.IMapper
 import com.data.data_cloud.response.PreviewResponse
 import com.data.data_model.PreviewData
 

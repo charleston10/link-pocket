@@ -1,6 +1,6 @@
 package com.data.data_db.datasource
 
-import com.core_bridge.IPreviewDataSource
+import com.core.IPreviewDataSource
 import com.data.data_db.dao.IPreviewDao
 import com.data.data_db.mapper.EntityMapper
 import com.data.data_model.PreviewData
