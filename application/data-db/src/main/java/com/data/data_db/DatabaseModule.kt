@@ -1,6 +1,7 @@
 package com.data.data_db
 
 import com.core_bridge.IPreviewDataSource
+import com.core_bridge.Named
 import com.data.data_db.dao.IPreviewDao
 import com.data.data_db.dao.PreviewDao
 import com.data.data_db.datasource.PreviewDataSource
@@ -14,7 +15,9 @@ object DatabaseModule {
         factory<IPreviewDao> { PreviewDao(androidContext()) }
 
         factory<IPreviewDataSource>(
-            named("LocalDataSource")
+            named(
+                Named.DataSource.LOCAL_DATA_SOURCE_PREVIEW
+            )
         ) { PreviewDataSource(get()) }
     }
 }

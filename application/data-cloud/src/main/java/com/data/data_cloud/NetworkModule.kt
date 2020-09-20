@@ -1,6 +1,7 @@
 package com.data.data_cloud
 
 import com.core_bridge.IPreviewDataSource
+import com.core_bridge.Named
 import com.data.data_cloud.api.GitHubApi
 import com.data.data_cloud.cloud.PreviewDataSource
 import com.data.data_cloud.network.HTTPClient
@@ -14,7 +15,9 @@ object NetworkModule {
         factory { get<HTTPClient>().create(GitHubApi::class) }
 
         factory<IPreviewDataSource>(
-            named("CloudDataSource")
+            named(
+                Named.DataSource.CLOUD_DATA_SOURCE_PREVIEW
+            )
         ) { PreviewDataSource(get()) }
     }
 }
