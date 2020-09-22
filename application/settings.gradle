@@ -1,8 +1,10 @@
-include ':data-model'
+include ':app'
+include ':presentation'
 include ':core'
+include ':domain'
+include ':data'
+include ':data-model'
 include ':remote'
 include ':cache'
-include ':data'
-include ':domain'
-include ':app'
+
 rootProject.name = "LinkPocket"

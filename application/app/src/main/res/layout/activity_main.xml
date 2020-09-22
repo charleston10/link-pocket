@@ -7,11 +7,11 @@
 
         <import type="android.view.View" />
 
-        <import type="com.linkpocket.ui.MainUiState" />
+        <import type="com.presentation.PreviewState" />
 
         <variable
-            name="viewModel"
-            type="com.linkpocket.ui.MainViewModel" />
+            name="state"
+            type="PreviewState" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,11 +26,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
+            android:text="Hey, Good Morning"
             android:textColor="@android:color/black"
             app:layout_constraintEnd_toStartOf="@id/button_notification"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Hey, Good Morning" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <include
             android:id="@+id/button_notification"
@@ -48,12 +48,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
+            android:text="The Best places to travel on Earth"
             android:textColor="@android:color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toStartOf="@id/button_notification"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/greeting_user"
-            android:text="The Best places to travel on Earth" />
+            app:layout_constraintTop_toBottomOf="@id/greeting_user" />
 
         <include
             android:id="@+id/tab_layout"
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:visibility="@{viewModel.uiState instanceof MainUiState.Success ? View.VISIBLE : View.GONE}"
+            android:visibility="@{state instanceof PreviewState.Success ? View.VISIBLE : View.GONE}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title_screen" />
 
@@ -69,7 +69,7 @@
             android:id="@+id/loading"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:visibility="@{viewModel.uiState instanceof MainUiState.Loading ? View.VISIBLE : View.GONE}"
+            android:visibility="@{state instanceof PreviewState.Loading ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
             layout="@layout/include_content_error_state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="@{viewModel.uiState instanceof MainUiState.Error ? View.VISIBLE : View.GONE}"
+            android:visibility="@{state instanceof PreviewState.Error ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +97,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/menu_bottom_nav" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
