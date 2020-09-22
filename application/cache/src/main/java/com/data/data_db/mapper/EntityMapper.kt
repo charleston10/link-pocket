@@ -1,6 +1,6 @@
 package com.data.data_db.mapper
 
-import com.core.IMapper
+import com.core.mapper.IMapper
 import com.data.data_model.PreviewData
 import com.data.data_db.entity.PreviewEntity
 

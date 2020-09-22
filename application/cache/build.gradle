@@ -62,5 +62,5 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 
     implementation project(':core')
-    implementation project(':data-model')
+    implementation project(':shared-model')
 }

@@ -1,6 +1,6 @@
 package com.data.mapper
 
-import com.core.IMapper
+import com.core.mapper.IMapper
 import com.data.data_model.PreviewData
 import com.domain.model.Preview
 

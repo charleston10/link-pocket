@@ -1,6 +1,7 @@
 package com.presentation
 
-import com.domain.GetListUseCase
+import com.core.usecase.IGetListUseCase
+import com.domain.model.Preview
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.Scheduler
@@ -23,7 +24,7 @@ interface IPreviewViewModel {
 }
 
 class PreviewViewModel(
-    private val getListUseCase: GetListUseCase,
+    private val getListUseCase: IGetListUseCase<Preview>,
     private val postThreadExecutor: Scheduler
 ) : IPreviewViewModel,
     InputPreviewViewModel,
@@ -47,7 +48,7 @@ class PreviewViewModel(
     }
 
     private fun initList() {
-        getListUseCase.getPreview()
+        getListUseCase.execute()
             .doOnSubscribe { disposables.addAll(it) }
             .subscribeOn(Schedulers.io())
             .observeOn(postThreadExecutor)

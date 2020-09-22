@@ -3,7 +3,7 @@ include ':presentation'
 include ':core'
 include ':domain'
 include ':data'
-include ':data-model'
+include ':shared-model'
 include ':remote'
 include ':cache'
 

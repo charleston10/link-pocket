@@ -1,6 +1,6 @@
 package com.data.data_cloud
 
-import com.core.IPreviewDataSource
+import com.core.datasource.IPreviewDataSource
 import com.core.Named
 import com.data.data_cloud.api.GitHubApi
 import com.data.data_cloud.cloud.PreviewDataSource

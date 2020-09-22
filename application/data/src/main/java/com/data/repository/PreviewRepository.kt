@@ -1,6 +1,6 @@
 package com.data.repository
 
-import com.core.IPreviewDataStore
+import com.core.datasource.IPreviewDataStore
 import com.data.mapper.ModelMapper
 import com.domain.model.Preview
 import com.domain.repository.IPreviewRepository

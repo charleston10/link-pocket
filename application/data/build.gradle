@@ -4,7 +4,7 @@ apply plugin: 'kotlin'
 dependencies {
     implementation project(':domain')
     implementation project(':core')
-    implementation project(':data-model')
+    implementation project(':shared-model')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "io.reactivex.rxjava2:rxkotlin:2.2.0"

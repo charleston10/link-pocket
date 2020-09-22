@@ -1,4 +1,4 @@
-package com.core
+package com.core.mapper
 
 interface IMapper<E, T> {
     fun transform(data: E): T

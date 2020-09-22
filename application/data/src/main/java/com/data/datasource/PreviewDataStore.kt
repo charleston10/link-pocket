@@ -1,7 +1,7 @@
 package com.data.datasource
 
-import com.core.IPreviewDataSource
-import com.core.IPreviewDataStore
+import com.core.datasource.IPreviewDataSource
+import com.core.datasource.IPreviewDataStore
 import com.core.exception.ErrorException
 import com.data.data_model.PreviewData
 import io.reactivex.Observable

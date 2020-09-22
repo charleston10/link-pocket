@@ -1,6 +1,6 @@
 package com.presentation
 
-import com.core.IMapper
+import com.core.mapper.IMapper
 import com.domain.model.Preview
 
 class PreviewMapper : IMapper<Preview, PreviewModel> {

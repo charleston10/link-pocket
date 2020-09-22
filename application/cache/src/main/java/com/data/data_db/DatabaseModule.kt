@@ -1,6 +1,6 @@
 package com.data.data_db
 
-import com.core.IPreviewDataSource
+import com.core.datasource.IPreviewDataSource
 import com.core.Named
 import com.data.data_db.dao.IPreviewDao
 import com.data.data_db.dao.PreviewDao
