@@ -1,4 +1,4 @@
-package com.linkpocket.ui.links.adapter
+package com.linkpocket.screen.links.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,12 +7,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.domain.model.Preview
 import com.linkpocket.R
 import com.linkpocket.databinding.ItemCardLinkBinding
+import com.presentation.PreviewModel
 
 class LinkKeeperAdapter : RecyclerView.Adapter<LinkKeeperAdapter.LinkKeeperAdapterViewHolder>() {
 
-    private val list = ArrayList<Preview>()
+    private val list = ArrayList<PreviewModel>()
 
-    fun addList(list : List<Preview>) {
+    fun addList(list : List<PreviewModel>) {
         this.list.clear()
         this.list.addAll(list)
     }
@@ -26,7 +27,7 @@ class LinkKeeperAdapter : RecyclerView.Adapter<LinkKeeperAdapter.LinkKeeperAdapt
 
     class LinkKeeperAdapterViewHolder(private val dataBinding: ItemCardLinkBinding) : RecyclerView.ViewHolder(dataBinding.root) {
 
-        fun bind(preview: Preview) {
+        fun bind(preview: PreviewModel) {
             dataBinding.preview = preview
         }
     }

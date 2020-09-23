@@ -17,7 +17,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.MainActivity">
+        tools:context=".screen.MainActivity">
 
         <TextView
             android:id="@+id/greeting_user"
@@ -34,7 +34,7 @@
 
         <include
             android:id="@+id/button_notification"
-            layout="@layout/include_content_button_notifiation"
+            layout="@layout/include_button_notification"
             android:layout_width="48dp"
             android:layout_height="48dp"
             app:layout_constraintBottom_toBottomOf="@id/greeting_user"
@@ -56,8 +56,8 @@
             app:layout_constraintTop_toBottomOf="@id/greeting_user" />
 
         <include
-            android:id="@+id/tab_layout"
-            layout="@layout/include_content_tab_layout"
+            android:id="@+id/include_content_success"
+            layout="@layout/include_content_success"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

@@ -1,4 +1,4 @@
-package com.linkpocket.ui.links
+package com.linkpocket.screen.links
 
 import android.os.Bundle
 import android.view.View

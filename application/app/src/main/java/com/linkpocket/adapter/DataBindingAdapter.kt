@@ -1,9 +1,10 @@
-package com.linkpocket
+package com.linkpocket.adapter
 
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
+import com.linkpocket.R
 
 object DataBindingAdapter {
 
